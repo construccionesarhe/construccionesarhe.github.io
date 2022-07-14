@@ -2,7 +2,7 @@ window.sr = ScrollReveal();
 
 	sr.reveal('.arhe', {
 		duration: 1000, //tiempo
-		delay:300,
+		delay:2000,
 		origin: 'bottom', //origen
 		distance: '0px' //distancia
 
@@ -20,6 +20,15 @@ window.sr = ScrollReveal();
 
 	sr.reveal('.titulo', {
 		duration: 1500, //tiempo
+		origin: 'top', //origen
+		distance: '-100px', //distancia
+		reset:1000
+
+	});
+
+	sr.reveal('.titulo2', {
+		duration: 1500, //tiempo
+		delay:1200,
 		origin: 'top', //origen
 		distance: '-100px', //distancia
 		reset:1000
