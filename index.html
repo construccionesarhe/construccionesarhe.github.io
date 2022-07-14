@@ -14,266 +14,341 @@
     <script src="https://kit.fontawesome.com/9b95a5c077.js" crossorigin="anonymous"></script>
      <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-   <link href="https://fonts.googleapis.com/css2?family=Alata&family=Paytone+One&family=Righteous&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Aclonica&family=Archivo+Black&family=Candal&family=Fira+Sans+Extra+Condensed:wght@300&family=Fredoka+One&family=Lilita+One&family=Mitr:wght@300&family=Niconne&family=Oleo+Script+Swash+Caps:wght@700&family=Titan+One&display=swap" rel="stylesheet">
    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Archivo&family=Paytone+One&family=Questrial&family=Righteous&display=swap" rel="stylesheet">
 
-    <script type='text/javascript'>
-$(document).ready(function(){ 
-    $(window).scroll(function(){ 
-        if ($(this).scrollTop() > 100) { 
-            $('#scroll').fadeIn(); 
-        } else { 
-            $('#scroll').fadeOut(); 
-        } 
-    }); 
-    $('#scroll').click(function(){ 
-        $("html, body").animate({ scrollTop: 0 }, 600); 
-        return false; 
-    }); 
-
-    $('a[href^="#"]').click(function() {
-    var destino = $(this.hash);
-    if (destino.length == 0) {
-      destino = $('a[name="' + this.hash.substr(1) + '"]');
-    }
-    if (destino.length == 0) {
-      destino = $('html');
-    }
-    $('html, body').animate({ scrollTop: destino.offset().top }, 500);
-    return false;
-  });
-
- $('.navbar-nav>li>a').on('click', function(){
-    $('.navbar-collapse').collapse('hide');
-});
-   
-});
-
-
-</script>
-	<title>Cervecería Durango - Menú Digital</title>
-	<link rel="shortcut icon" href="img/logo.jpeg"/>
+	<title>Construcciones ARHE</title>
+	<link rel="shortcut icon" href="img/logoARHE.png"/>
 </head>
 <!--<body>
     <div class="row justify-content-center">
     <h1 class='desactivado col-11 text-center' ><li class='mr-1 far fa-times-circle'></li>DESACTIVADO TEMPORALMENTE<li class='ml-1 far fa-tired'></li>
         </h1> 
 </div>-->
-<body translate="no" style="background-size: 100% ; background-image: url(img/fondoCuerpo.png)">
+<body translate="no">
 
 
 <section class="logo col-12">
                     <div class="row justify-content-center">
-                        <img class="col-12 col-lg-3 ml-4 mb-3" src="img/logo2.jpeg" >    
-                         <h5 class='menuDigital col-12 col-lg-12 mb-0 ml-4 text-center text-black' id="barraFria">Menú Digital <li class="fa fa-wifi"></li>
+                        <img class="col-5 col-lg-3 ml-4 mb-2 mt-3" src="img/logoARHE.png" id="bienvenidos">    
         </h5>              
             </div>
-        </section>
-
-            <nav class="table-responsive sticky-top ">
-
-            <table class="table">
             
-                
-               <tbody>
-                    <tr class="d-flex justify-content-center"> 
-                        <td><a href="bebidas.html"><button type='button' class='btn btn-outline-light font-weight-normal menuBanner text-uppercase text-nowrap' id='Postres'><i class='mr-1 fas fa-cocktail'></i>BEBIDAS</button></a></td>
-                    <td><a href="#tacos"><button type='button' class='btn btn-outline-light font-weight-normal menuBanner text-uppercase text-nowrap' id='Postres'><i class='mr-1 fa fa-cutlery'></i>TACOS</button></a></td>
-                        <td><a href="#tostadas"><button type='button' class='btn btn-outline-light font-weight-normal menuBanner text-uppercase text-nowrap' id='Postres'><i class='mr-1 fas fa-fish'></i>TOSTADAS</button></a></td>
-                        <td><a href="#aguachiles"><button type='button' class='btn btn-outline-light font-weight-normal menuBanner text-uppercase text-nowrap' id='Comida'><i class='mr-1 fas fa-utensil-spoon'></i>AGUACHILES</button></a></td>
-                        <td><a href="#hamburguesa"><button type='button' class='btn btn-outline-light font-weight-normal menuBanner text-uppercase text-nowrap' id='Bebidas'><i class='mr-1 fas fa-hamburger'></i>MINI HAMBURGUESA</button></a></td>
-                        <td><a href="#burritos"><button type='button' class='btn btn-outline-light font-weight-normal menuBanner text-uppercase text-nowrap' id='Postres'><i class='mr-1   fa fa-cutlery'></i>BURRITOS</button></a></td>
-                        <td><a href="#snack"><button type='button' class='btn btn-outline-light font-weight-normal menuBanner text-uppercase text-nowrap' id='Postres'><i class='mr-1 fa fa-cutlery'></i>SNACK</button></a></td>
-                        <td><a href="#especialidades"><button type='button' class='btn btn-outline-light font-weight-normal menuBanner text-uppercase text-nowrap' id='Comida'><i class='mr-1 fa fa-cutlery'></i>ESPECIALIDADES</button></a></td>
-                        <td><a href="#botanas"><button type='button' class='btn btn-outline-light font-weight-normal menuBanner text-uppercase text-nowrap' id='Comida'><i class='mr-1 fa fa-cutlery'></i>BOTANAS</button></a></td>
-                        <td><a href="#extras"><button type='button' class='btn btn-outline-light font-weight-normal menuBanner text-uppercase text-nowrap' id='Comida'><i class='mr-1 fa fa-cutlery'></i>EXTRAS</button></a></td>
-    
-
-                    </tr>
-                </tbody>
-            </table>
-        </nav>    
-        
-
-    
+        </section>
+        <nav class="navbar navbar-dark navbar-expand-md justify-content-center sticky-top md-fixed mb-2" style="background-color: #222222;">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" >
+    <span class="navIcon fa fa-bars"></span>
+  </button>
+  <div class="collapse navbar-collapse col-lg-9 " id="navbarNav">
+    <ul class="navbar-nav mr-auto ml-auto ">
+                    <li class="nav-item active mt-2" data-toggle="collapse" data-target=".navbar-collapse.show"><a class="nav-link" href="#bienvenidos" ><span class="sr-only">(current)</span>Bienvenidos a BME</a></li>
+                    <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a class="nav-link navbar-dark" href="#caracteristicas" >Características del sistema BME</a></li>
+                    <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a class="nav-link" href="#cualidades" >Cualidades de las edificaciones con el sistema BME</a></li>
+                    <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a class="nav-link" href=#materiales >Materiales a utilizar</a></li>
+                    <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a class="nav-link" href=#metodo >Método Constructivo</a></li>
+                    <li class="nav-item mb-4" data-toggle="collapse" data-target=".navbar-collapse.show"><a class="nav-link" href=#personalizada >Personalizada</a></li>
+                    
+                </ul>      
+  </div>
+</nav>
+   
     
 <div class="container">
     
 
-    <section class="mt-3"  >
+    <section class="mt-4" >
         
 
-                     <h4 class='titulo mb-3 mt-0 text-center' ><li class='mr-2 fas fa-hamburger'></li>TACOS
-        </h4>   
+                     <h5 class='titulo mb-3 mt-0 text-center' id="caracteristicas"><b>Bienvenidos a BME</b>
+        </h5>   
         <hr>
-        <div class="row justify-content-left ml-0 text-lg-center">
-            <h5 class='cuerpo col-8 col-lg-6"' >*Asada</h5>
-            <h5 class="precio col-3"><span class="badge badge-pill badge-secondary ml-3">$21.00</span></h5>
-        </div>
-        <div class="row justify-content-left ml-0 text-lg-center">
-            <h5 class='cuerpo col-8 col-lg-6"' >*Pastor</h5>
-            <h5 class="precio col-3"><span class="badge badge-pill badge-secondary ml-3">$21.00</span></h5>
-        </div>
-        <div class="row justify-content-left ml-0 text-lg-center">
-            <h5 class='cuerpo col-8 col-lg-6"' >*Chicharrón</h5>
-            <h5 class="precio col-3"><span class="badge badge-pill badge-secondary ml-3" id="tostadas">$21.00</span></h5>
-        </div>
-        <div class="row justify-content-left ml-0 mb-4 text-lg-center">
-            <h5 class='cuerpo col-8 col-lg-6"' >*Arrachera</h5>
-            <h5 class="precio col-3"><span class="badge badge-pill badge-secondary ml-3" >$25.00</span></h5>
-        </div>
-
-        <h4 class='titulo mb-3 mt-4 text-center'><li class='mr-2 fa fa-cutlery'></li>TOSTADAS
-        </h4>   
-        <hr>
-        <div class="row justify-content-left ml-0 text-lg-center">
-            <h5 class='cuerpo col-8 col-lg-6"' >*Ceviche de pescado</h5>
-            <h5 class="precio col-3"><span class="badge badge-pill badge-secondary ml-3" id="aguachiles">$21.00</span></h5>
-        </div>
-        <div class="row justify-content-left ml-0 mb-4 text-lg-center">
-            <h5 class='cuerpo col-8 col-lg-6"' >*Aguachile de camarón</h5>
-            <h5 class="precio col-3"><span class="badge badge-pill badge-secondary ml-3" >$21.00</span></h5>
-        </div>
-
-        <h4 class='titulo mb-3 mt-4 text-center'><li class='mr-2 fa fa-cutlery'></li>AGUACHILES
-        </h4>   
-        <hr>
-        <div class="row justify-content-left ml-0 text-lg-center">
-            <h5 class='cuerpo col-8 col-lg-6"' >*Rojos</h5>
-            <h5 class="precio col-3"><span class="badge badge-pill badge-secondary ml-3" >$120.00</span></h5>
-        </div>
-        <div class="row justify-content-left ml-0 mb-4 text-lg-center" id="hamburguesa">
-            <h5 class='cuerpo col-8 col-lg-6"' >*Verdes</h5>
-            <h5 class="precio col-3"><span class="badge badge-pill badge-secondary ml-3" >$120.00</span></h5>
-        </div>
-        <div class="row justify-content-left ml-0 text-lg-center">
-            <h5 class='cuerpo col-8 col-lg-6"' >*Negros</h5>
-            <h5 class="precio col-3"><span class="badge badge-pill badge-secondary ml-3" >$120.00</span></h5>
-        </div>
-     
-        <h4 class='titulo mb-3 mt-4 text-center'><li class='mr-2 fa fa-cutlery'></li>MINI HAMBURGUESAS
-        </h4>   
-        <hr>
-       <div class="row justify-content-left ml-0 text-lg-center" id="burritos">
-            <h5 class='cuerpo col-8 col-lg-6"' >*Res</h5>
-            <h5 class="precio col-3"><span class="badge badge-pill badge-secondary ml-3" >$21.00</span></h5>
-        </div>
-        <div class="row justify-content-left ml-0 mb-4 text-lg-center">
-            <h5 class='cuerpo col-8 col-lg-6"' >*Camarón</h5>
-            <h5 class="precio col-3"><span class="badge badge-pill badge-secondary ml-3" >$21.00</span></h5>
-        </div>
-         <h4 class='titulo mb-3 mt-4 text-center'><li class='mr-2 fa fa-cutlery'></li>HAMBURGUESAS ESPECIALES
-        </h4>   
-        <hr>
-       <div class="row justify-content-left ml-0 text-lg-center" id="burritos">
-            <h5 class='cuerpo col-8 col-lg-6"' >*Res</h5>
-            <h5 class="precio col-3"><span class="badge badge-pill badge-secondary ml-3" >$70.00</span></h5>
-        </div>
-        <div class="row justify-content-left ml-0 mb-4 text-lg-center">
-            <h5 class='cuerpo col-8 col-lg-6"' >*Camarón</h5>
-            <h5 class="precio col-3"><span class="badge badge-pill badge-secondary ml-3" >$90.00</span></h5>
-        </div>
-        <h4 class='titulo mb-3 mt-0 text-center'><li class='mr-2 fa fa-beer'></li>BURRITOS
-        </h4>   
-        <hr>
-
-        <div class="row justify-content-left ml-0 text-lg-center">
-            <h5 class='cuerpo col-8 col-lg-6"' >*Chicharrón</h5>
-            <h5 class="precio col-3"><span class="badge badge-pill badge-secondary ml-3" >$21.00</span></h5>
-        </div>
-        <div class="row justify-content-left ml-0 text-lg-center">
-            <h5 class='cuerpo col-8 col-lg-6"' >*Asada</h5>
-            <h5 class="precio col-3"><span class="badge badge-pill badge-secondary ml-3" >$21.00</span></h5>
-        </div>
-        <div class="row justify-content-left ml-0 text-lg-center" id="snack">
-            <h5 class='cuerpo col-8 col-lg-6"' >*Pastor</h5>
-            <h5 class="precio col-3"><span class="badge badge-pill badge-secondary ml-3" >$21.00</span></h5>
-        </div>
-        <div class="row justify-content-left ml-0 mb-4 text-lg-center">
-            <h5 class='cuerpo col-8 col-lg-6"' >*Arrachera</h5>
-            <h5 class="precio col-3"><span class="badge badge-pill badge-secondary ml-3" >$50.00</span></h5>
-        </div>
-
-        <h4 class='titulo mb-3 mt-4 text-center'><li class='mr-2 fa fa-beer'></li>SNACK
-        </h4>   
-        <hr>
-
-        <div class="row justify-content-left ml-0 text-lg-center">
-            <h5 class='cuerpo col-8 col-lg-6"' >*Alitas</h5>
-            <h5 class="precio col-3"><span class="badge badge-pill badge-secondary ml-3" >$90.00</span></h5>
-        </div>
-        <div class="row justify-content-left ml-0 text-lg-center">
-            <h5 class='cuerpo col-8 col-lg-6"' >*Boneless</h5>
-            <h5 class="precio col-3"><span class="badge badge-pill badge-secondary ml-3" >$90.00</span></h5>
-        </div>
-        <div class="row justify-content-left ml-0 text-lg-center">
-            <h5 class='cuerpo col-8 col-lg-6"' >*Papas Gajo</h5>
-            <h5 class="precio col-3"><span class="badge badge-pill badge-secondary ml-3" >$50.00</span></h5>
-        </div>
-        <div class="row justify-content-left ml-0 text-lg-center">
-            <h5 class='cuerpo col-8 col-lg-6"' >*Papas a la francesa</h5>
-            <h5 class="precio col-3"><span class="badge badge-pill badge-secondary ml-3" >$50.00</span></h5>
-        </div>
-        <div class="row justify-content-left ml-0 text-lg-center" id="especialidades">
-            <h5 class='cuerpo col-8 col-lg-6"' >*Aros de Cebolla</h5>
-            <h5 class="precio col-3"><span class="badge badge-pill badge-secondary ml-3" >$50.00</span></h5>
-        </div>
-        <div class="row justify-content-left ml-0 mb-4 text-lg-center">
-            <h5 class='cuerpo col-8 col-lg-6"' >*Dedos de queso</h5>
-            <h5 class="precio col-3"><span class="badge badge-pill badge-secondary ml-3" >$70.00</span></h5>
-        </div>
-
-        <h4 class='titulo mb-3 mt-4 text-center'><li class='mr-2 fa fa-beer'></li>ESPECIALIDADES
-        </h4>   
-        <hr>
-<div class="row justify-content-left ml-0 text-lg-center">
-            <h5 class='cuerpo col-8 col-lg-6"' >*Nachos de la casa</h5>
-            <h5 class="precio col-3"><span class="badge badge-pill badge-secondary ml-3" >$90.00</span></h5>
-        </div>
-        <div class="row justify-content-left ml-0 text-lg-center" id="botanas">
-            <h5 class='cuerpo col-8 col-lg-6"' >*Papas Especiales</h5>
-            <h5 class="precio col-3"><span class="badge badge-pill badge-secondary ml-3" >$90.00</span></h5>
-        </div>
-        <div class="row justify-content-left ml-0 mb-4 text-lg-center">
-            <h5 class='cuerpo col-8 col-lg-6"' >*Costra de Arrachera</h5>
-            <h5 class="precio col-3"><span class="badge badge-pill badge-secondary ml-3" >$50.00</span></h5>
-        </div>
-
-        <h4 class='titulo mb-3 mt-4 text-center'><li class='mr-2 fa fa-beer'></li>BOTANAS
-        </h4>   
-        <hr>
-<div class="row justify-content-left ml-0 text-lg-center" id="extras">
-            <h5 class='cuerpo col-8 col-lg-6"' >*Miche Papas</h5>
-            <h5 class="precio col-3"><span class="badge badge-pill badge-secondary ml-3" >$50.00</span></h5>
-        </div>
-        <div class="row justify-content-left ml-0 mb-4 text-lg-center">
-            <h5 class='cuerpo col-8 col-lg-6"' >*Burros fin de semana</h5>
-            <h5 class="precio col-3"><span class="badge badge-pill badge-secondary ml-3" >$25.00</span></h5>
-        </div>
-
-        <h4 class='titulo mb-3 mt-4 text-center'><li class='mr-2 fa fa-beer'></li>EXTRAS
-        </h4>   
-        <hr>
-<div class="row justify-content-left ml-0 text-lg-center">
-            <h5 class='cuerpo col-8 col-lg-6"' >*Ranch</h5>
-            <h5 class="precio col-3"><span class="badge badge-pill badge-secondary ml-3" >$10.00</span></h5>
-        </div>
-        <div class="row justify-content-left ml-0 text-lg-center">
-            <h5 class='cuerpo col-8 col-lg-6"' >*Catsup</h5>
-            <h5 class="precio col-3"><span class="badge badge-pill badge-secondary ml-3" >$10.00</span></h5>
-        </div>
-        <div class="row justify-content-left ml-0 text-lg-center">
-            <h5 class='cuerpo col-8 col-lg-6"' >*Queso Amarillo</h5>
-            <h5 class="precio col-3"><span class="badge badge-pill badge-secondary ml-3" >$10.00</span></h5>
-        </div>
-        <div class="row justify-content-left ml-0 mb-4 text-lg-center">
-            <h5 class='cuerpo col-8 col-lg-6"' >*Vegetales</h5>
-            <h5 class="precio col-3"><span class="badge badge-pill badge-secondary ml-3" >$25.00</span></h5>
-        </div>
-</section>
+<div class="container col-12 ">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-12 col-md-6 ">
+            <h6 class="cuerpo ml-2 ml-md-0"><b>BME</b> es la solución más moderna, rápida y eficiente a la hora de construir con madera. BME es un desarrollo patentado apoyado en el uso eficiente y sustentable de la madera, el cual permite la materialización de espacios habitables tales como Casas, Cabañas, Oficinas, entre otros, con una gran cantidad de ventajas comparativas respecto a la construcción tradicional.</h6>
 </div>
-     
+<video src="img/Videoinstitucionalbmp.mp4" class="col-12 col-md-6 mt-3 ml-2 ml-md-0" controls poster="vistaprevia.jpg">
+Lo sentimos. Este vídeo no puede ser reproducido en tu navegador.<br>
+La versión descargable está disponible en <a href="URL">Enlace</a>. 
+</video>
+        </div>
+    </div>
+</section>
+        
+
+        <h5 class='titulo mb-3 mt-5 text-center' id="cualidades" ><b>Características del sistema BME</b>
+        </h5>   
+        <hr>
+        <section class="col-12 mb-5" id="" >    
+    <div class="container col-12 mt-2 caracteristicas mb-4">  
+        <div class="row justify-content-center"> 
+            
+            <ul class='cuerpo col-12 col-md-6 mt-3 ml-3 ml-md-3 text-left' >
+  <li>Rápida construcción.</li>
+  <li>Resistencia en muros portantes y no portantes.</li>
+  <li>Mayores luces en entrepisos y cubiertas (accesibles y no accesibles)</li>
+  <li>Disminución en las cargas de la edificación. No utiliza agua.</li>
+  <li>Ahorra tiempos en la construcción ya que no hay que esperar el fraguado de los materiales.</li>
+  <li>Reduce sustancialmente los desperdicios y generación de desperdicios en obra.</li>
+  <li>Reduce el esfuerzo físico de los obreros.</li><br>
+  ¿Qué sucede si se comete algún error? A diferencia de la construcción convencional donde significaría perdida de material, con Sistema BME solo es necesario desarmar el o los muros necesarios y volverlos a colocar de la manera correcta utilizando los mismos materiales.
+</ul>
+
+          
+    </div></div>
+<div class="row justify-content-center ml-1" id="">
+    <img class="col-12 col-lg-5 mb-3 mt-2" id="myImg2" src="img/exterior/ext8.jpg" alt="" style="border-radius: 20px;">
+</div>
+    <!-- The Modal -->
+<div id="myModal2" class="modal2">
+
+  <!-- The Close Button -->
+  <span class="close2">&times;</span>
+
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content2" id="img02">
+
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption2"></div>
+</div>
+</section>
+
+
+
+
+
+        <h5 class='titulo mb-3 mt-2 text-center'><b>Cualidades de las edificaciones con el sistema BME</b>
+        </h5>   
+        <hr>
+        <section class="col-12 mb-5">    
+    <div class="container col-12 mt-2 caracteristicas mb-4">  
+        <div class="row justify-content-center align-items-center"> 
+            
+            <ul class='cuerpo col-5 col-md-5 mt-3 ml-3 text-left' >
+  <li>Muros robustos</li>
+  <li>Térmicos</li>
+  <li>Acústicos</li>
+  <li>Antisísmico</li>
+  <li>Antiestático</li>
+  <li>No condensa la humedad</li>
+  <li>Durables</li>
+</ul>
+
+<ul class='cuerpo col-5 col-md-5 mt-3 ml-3 text-left' id="materiales" >
+ 
+  
+  <li>Fácil mantenimiento</li>
+  <li>Excelentes terminaciones</li>
+  <li>Eficientes y hermosos Diseños Ecológicos</li>
+</ul>
+<!-- Trigger the Modal -->
+
+
+
+          
+    </div>
+</div>
+<div class="row justify-content-center ml-1" id="metodo">
+<img class="col-12 col-lg-5 mb-3 mt-2" id="myImg" src="img/interior/int21.jpg" alt="" style="border-radius: 20px;">
+</div>
+    <!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- The Close Button -->
+  <span class="close">&times;</span>
+
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img01">
+
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption"></div>
+</div>
+</section>
+
+        <h5 class='titulo mb-3 mt-4 text-center' ><b>Materiales a utilizar</b>
+        </h5>   
+        <hr>
+  
+        <div class="row justify-content-center ml-0 text-lg-center align-items-center col-xsm-12" >
+            <h6 class='cuerpo text-left col-6 col-md-6"' >Consiste en la utilización de bloques ranurados de madera de tamaños prefijados, estos bloques a modo de "ladrillos" se superponen unos a otros unidos a través de listones, tarugos de madera y tornillos metálicos que garantizan la vinculación y forman los muros, conformando espacios estancos en el interior.</h6>
+            <img class="col-6 col-lg-3 mb-4 mt-1" id="myImg3"  style="border-radius: 20px; "src="img/interior/int7.jpg" >   
+        </div>
+
+           
+
+    <!-- The Modal -->
+<div id="myModal3" class="modal3">
+
+  <!-- The Close Button -->
+  <span class="close3">&times;</span>
+
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content3" id="img03">
+
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption3"></div>
+</div>
+
+        <h5 class='titulo mb-3 mt-4 text-center'><b>Método constructivo</b>
+        </h5>   
+        <hr>
+        <div class="container col-12 ">
+<div class="row justify-content-left ml-0 text-lg-center">
+            <h6 class='cuerpo col-md-6"' >BME es un sistema sencillo que se basa en la colocación de los bloques a manera de lego, unidos por tornillos metálicos y elementos de madera que permiten brindar estabilidad a los muros de la construcción.<br>
+La construcción inicia con la elaboración de una plataforma de concreto o acero según lo requiera el terreno donde se construirá, es en estas plataformas desde donde se desplantan las hiladas de bloques, en la primera hilada se utilizan bloques tratados con un sellador que evita la transaminación de humedad, a partir de esta y siguiendo los planos constructivos se van colocando las hiladas restantes de la edificación, respetando los vanos de puertas y ventanas. Las juntas de los bloques se sellan con silicona elástica para evitar el paso de agua, viento o insectos.<br>
+La construcción se remata con vigas para la techumbre, estos elementos pueden estar a una, dos o más aguas según el diseño deseado, en caso de viviendas de dos niveles se utiliza el mismo sistema de vigas y machimbre para los entrepisos.<br>
+Para finalizar se colocan los acabados deseados a pisos, muros y techumbre.<br>
+¿Qué sucede si se comete algún error? A diferencia de la construcción convencional donde significaría perdida de material, con Sistema BME solo es necesario desarmar el o los muros necesarios y volverlos a colocar utilizando los mismos materiales.
+</h6>
+
+
+</div></div>
+
+<div class="container col-12 col-md-6 justify-content-center mt-2" id="personalizada">
+  <div class="mySlides">
+    <div class="numbertext">1 / 5</div>
+    <img src="img/metodo constructivo.jpg" style="width:">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 5</div>
+    <img src="img/metodo constructivo 2.jpg" style="width:%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 5</div>
+    <img src="img/metodo constructivo 3.jpg" style="width:%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 5</div>
+    <img src="img/metodo constructivo 4.jpg" style="width:%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 5</div>
+    <img src="img/metodo constructivo 5.jpg" style="width:%">
+  </div>
+    
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption1"></p>
+  </div>
+
+  <div class="row justify-content-center ml-1 mt-4" >
+    <div class="column">
+      <img class="demo cursor" src="img/metodo constructivo.jpg" style="width:100%" onclick="currentSlide(1)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/metodo constructivo 2.jpg" style="width:100%" onclick="currentSlide(2)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/metodo constructivo 3.jpg" style="width:100%" onclick="currentSlide(3)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/metodo constructivo 4.jpg" style="width:100%" onclick="currentSlide(4)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/metodo constructivo 5.jpg" style="width:100%" onclick="currentSlide(5)" alt="">
+    </div>    
+  </div>
+</div>
+
+
+
+
+
+       <h5 class='titulo mb-3 mt-5 text-center'><b>Personalizada</b>
+        <hr>
+<div class="container col-12 ">
+<div class="row justify-content-left ml-0 text-lg-center">
+            <h6 class='cuerpo col-md-6"' >Este sistema no limita al usuario a una sola tipología de construcción, ya que es posible edificar construcciones de uno o dos niveles.
+</h6>
+
+
+</div></div>
+<div class="container col-12 mt-2 caracteristicas mb-4">  
+        <div class="row justify-content-center align-items-center"> 
+            
+            <ul class='cuerpo col-5 col-md-5 mt-3 ml-1 text-left' >
+  <li>Viviendas</li>
+  <li>Cabañas</li>
+  <li>Espacios Turísticos</li>
+  <li>Escuelas</li>
+  <li>Oficinas</li>
+  <li>Comercios</li>
+  <li>Departamentos</li>
+</ul>
+<!-- Trigger the Modal -->
+
+
+<img class="col-6 col-md-3 ml-0 mb-3 mt-3" id="myImg4" src="img/exterior/ext92.jpg" alt="" style="border-radius: 20px;">
+
+    </div>
+</div>
+
+
+<div class="container col-12 ">
+<div class="row justify-content-left ml-0 text-lg-center">
+            <h6 class='cuerpo col-md-6"' >En cuanto a los acabados existen una gran variedad a disposición, en donde se puede elegir:
+</h6>
+
+
+</div></div>
+<div class="container col-12 mt-2 caracteristicas mb-4">  
+        <div class="row justify-content-center align-items-center"> 
+            <img class="col-6 col-md-3 ml-0 mb-3 mt-3" id="myImg5" src="img/interior/int4.jpg" alt="" style="border-radius: 20px;">
+            <ul class='cuerpo col-5 col-md-5 mt-3 ml-1 ml-md-3 text-left' >
+<li>El terminado de la madera, esmaltado o natural.</li>
+  <li>Color exterior o interior de los muros y techumbre.</li>
+  <li>El acabado de la techumbre, teja asfáltica, teja o galvateja y machimbre.</li>
+  <li>El piso tanto exterior como interior en madera, machimbre o mixto.</li>
+</ul>
+<!-- Trigger the Modal -->
+
+
+
+
+    </div>
+</div>
+
+
+</section>
+          
+
+    <!-- The Modal -->
+<div id="myModal4" class="modal4">
+
+  <!-- The Close Button -->
+  <span class="close4">&times;</span>
+
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content4" id="img04">
+
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption4"></div>
+</div>
+</div>
+
+    <!-- The Modal -->
+<div id="myModal5" class="modal5">
+
+  <!-- The Close Button -->
+  <span class="close5">&times;</span>
+
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content5" id="img05">
+
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption5"></div>
+</div>
+</div> 
+
+
+
+
         
     <a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;">Top<span></span></a>
 </a> 
@@ -284,10 +359,10 @@ $(document).ready(function(){
 
                     <ul class="piepagina list-unstyled basic-info text-left">
                         <br><br>
-                        <li><i class="fas fa-map-marker-alt "></i> Blvd. Durango No. 1404 Barrio De Tierra Blanca 34139 Victoria de Durango, México</li>
-                        <li><i class="fab fa-facebook" ></i> Cervecería Durango </li>
-                        <li><i class="fab fa-instagram mb-5"></i> cerveceriadurango</li>
-                            
+                        <li><i class="fas fa-map-marker-alt "></i> Calle Río Pánuco 207 local B-3 planta alta. Col. Valle del Sur en Plaza Valle del Sur.</li>
+                        <li><i class="fas fa-globe-americas "></i> Construcciones ARHE</li>
+                        <li><i class="fab fa-facebook" ></i> Construcciones ARHE </li>
+                        <li><i class="fab fa-instagram mb-5"></i> construcciones.arhe</li>
                     </ul>
               </div>              
     </section>
@@ -296,9 +371,10 @@ $(document).ready(function(){
 <div class="center justify-content-left">
  <div id="social-test">
  <div class="social">
- <a href="https://www.facebook.com/Cervecer%C3%ADa-Durango-1361619377292042/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
- <a href="https://instagram.com/cerveceriadurango?utm_medium=copy_link"><i class="fa fa-instagram" aria-hidden="true"></i></a>
- <a href="https://maps.app.goo.gl/sipQSRo7J7P9AaE77"><i class="fa fa-map-marker-alt" aria-hidden="true"></i></a>
+ <a href="https://www.facebook.com/construcciones.arhe"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+ <a href="https://www.instagram.com/construcciones.arhe/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+ <a href="https://www.construccionesarhe.com/"><i class="fas fa-globe-americas" aria-hidden="true"></i></a>
+ <a href="https://maps.app.goo.gl/EoNwUinMfBiYSWqU6"><i class="fa fa-map-marker-alt" aria-hidden="true"></i></a>
  </div>
  </div>
 </div>
