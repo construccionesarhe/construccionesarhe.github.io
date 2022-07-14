@@ -821,3 +821,38 @@ margin-bottom:;}
 #social-test a:hover{color:#fff;border:1px solid #ccc}
 .social:hover>a{opacity:.5}
 .social:hover>a:hover{opacity:1}
+
+.loader_bg{
+    position: fixed;
+    z-index: 999999;
+    background: #222222;
+    width: 100%;
+    height: 100%;
+}
+.loader{
+    border: 0 soild transparent;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: calc(50vh - 75px);
+    left: calc(50vw - 75px);
+}
+
+  .loader_bg img{
+    display:inline-block;
+    vertical-align:middle;
+    margin-top: -40px;
+    margin-left: 8px;
+    animation-name:pulse_animation;animation-duration:2500ms;
+    transform-origin:50% 50%;animation-timing-function:ease-in-out}
+    @media (min-width: 375px){
+.loader_bg img{max-width:180px !important;max-height:180px !important}}
+@keyframes pulse_animation{0%{transform:scale(1)}100%{transform:scale(1.7)}}
+   
+ 
+.progress{position:relative;height:4px;display:block;width:100%;background-color:#F4F4F4;border-radius:2px;background-clip:padding-box;margin:0 auto;overflow:hidden}
+.progress .loading-bar{background-color:#797d80}
+.progress .indeterminate:before{content:'';position:absolute;background-color:inherit;top:0;left:0;bottom:0;will-change:left, right;-webkit-animation:indeterminate 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;animation:indeterminate 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite}
+.progress .indeterminate:after{content:'';position:absolute;background-color:inherit;top:0;left:0;bottom:0;will-change:left, right;-webkit-animation:indeterminate-short 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;animation:indeterminate-short 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;-webkit-animation-delay:1.15s;animation-delay:1.15s}@-webkit-keyframes indeterminate{0%{left:-35%;right:100%}60%{left:100%;right:-90%}100%{left:100%;right:-90%}}
+@keyframes indeterminate{0%{left:-35%;right:100%}60%{left:100%;right:-90%}100%{left:100%;right:-90%}}@-webkit-keyframes indeterminate-short{0%{left:-200%;right:100%}60%{left:107%;right:-8%}100%{left:107%;right:-8%}}@keyframes indeterminate-short{0%{left:-200%;right:100%}60%{left:107%;right:-8%}100%{left:107%;right:-8%}}
