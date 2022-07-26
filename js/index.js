@@ -31,7 +31,7 @@ window.sr = ScrollReveal();
 		delay:1200,
 		origin: 'top', //origen
 		distance: '-100px', //distancia
-		reset:1000
+
 
 	});
 
